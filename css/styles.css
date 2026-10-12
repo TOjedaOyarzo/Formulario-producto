@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.card {
+    width: 100%;
+    max-width: 680px;
+    background-color: #ffffff;
+    border: 1px solid #777777;
+    border-radius: 7px;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.45);
+    padding: 48px 24px 28px;
+}
+
+.card-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 48px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 14px;
+    row-gap: 18px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.campo-anchos {
+    grid-column: 1 / -1;
+}
+
+label,
+.etiqueta-grupo {
+    font-size: 14px;
+    font-weight: 400;
+    color: #111111;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #222222;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+}
+
+input[type="text"],
+select {
+    height: 30px;
+    padding: 4px 8px;
+}
+
+select {
+    cursor: pointer;
+}
+
+select:disabled {
+    background-color: #eeeeee;
+    color: #777777;
+    cursor: not-allowed;
+}
+
+textarea {
+    min-height: 54px;
+    padding: 5px 6px;
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1aab8a;
+    box-shadow: 0 0 0 2px rgba(26, 171, 138, 0.18);
+}
+
+.checkboxes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 4px;
+}
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    accent-color: #1976d2;
+    cursor: pointer;
+}
+
+.acciones {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#btnGuardar {
+    width: 230px;
+    max-width: 100%;
+    min-height: 36px;
+    padding: 9px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #1aab8a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#btnGuardar:hover {
+    background-color: #159678;
+}
+
+#btnGuardar:disabled {
+    background-color: #7fcbb8;
+    cursor: not-allowed;
+}
+
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Producto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1 class="card-title">Formulario de Producto</h1>
+
+        <form id="formProducto" novalidate>
+            <div class="grid">
+                <div class="campo">
+                    <label for="codigo">Código</label>
+                    <input type="text" id="codigo" name="codigo" autocomplete="off">
+                </div>
+
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="off">
+                </div>
+
+                <div class="campo">
+                    <label for="bodega">Bodega</label>
+                    <select id="bodega" name="bodega">
+                        <option value="">Seleccionar bodega</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="sucursal">Sucursal</label>
+                    <select id="sucursal" name="sucursal" disabled>
+                        <option value="">Seleccionar sucursal</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="moneda">Moneda</label>
+                    <select id="moneda" name="moneda">
+                        <option value="">Seleccionar moneda</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="precio">Precio</label>
+                    <input type="text" id="precio" name="precio" autocomplete="off">
+                </div>
+
+                <div class="campo campo-anchos" id="grupoMateriales">
+                    <span class="etiqueta-grupo">Material del Producto</span>
+                    <div class="checkboxes">
+                        <label class="checkbox"><input type="checkbox" name="materiales[]" value="Plástico"> Plástico</label>
+                        <label class="checkbox"><input type="checkbox" name="materiales[]" value="Metal"> Metal</label>
+                        <label class="checkbox"><input type="checkbox" name="materiales[]" value="Madera"> Madera</label>
+                        <label class="checkbox"><input type="checkbox" name="materiales[]" value="Vidrio"> Vidrio</label>
+                        <label class="checkbox"><input type="checkbox" name="materiales[]" value="Textil"> Textil</label>
+                    </div>
+                </div>
+
+                <div class="campo campo-anchos">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+                </div>
+            </div>
+
+            <div class="acciones">
+                <button type="submit" id="btnGuardar">Guardar Producto</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
