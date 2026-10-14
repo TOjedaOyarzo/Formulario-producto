@@ -4,7 +4,7 @@ function obtenerConexion()
 {
     $dsn = sprintf(
         'pgsql:host=%s;port=%s;dbname=%s',
-        'localhost',
+        'db',
         '5432',
         'productos'
     );
